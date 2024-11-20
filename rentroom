@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 800px;
+            background: white;
+            border-radius: 16px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 16px 0;
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .type {
+            color: #666;
+            font-weight: normal;
+        }
+
+        .address {
+            color: #666;
+            font-size: 18px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .view-more {
+            display: inline-block;
+            background-color: #5941A9;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+
+        .view-more:hover {
+            background-color: #4B3690;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/api/placeholder/300/200" alt="Room interior" class="room-image">
+        <div class="content">
+            <h1 class="title">
+                Rent Room <span class="type">(2BHK)</span>
+            </h1>
+            <p class="address">
+                123 Demo Street, Suite 100<br>
+                Sample City, ST 12345<br>
+                Country
+            </p>
+            <a href="#" class="view-more">View more</a>
+        </div>
+    </div>
+</body>
+</html>

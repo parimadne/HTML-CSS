@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 800px;
+            height: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(89, 65, 169, 0.4), rgba(89, 65, 169, 0.2));
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .explore-button {
+            background-color: white;
+            color: #5941A9;
+            padding: 12px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .explore-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/api/placeholder/800/500" alt="Window cleaner at work" class="card-image">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="title">Window<br>Cleaning</h1>
+            <a href="#" class="explore-button">Explore</a>
+        </div>
+    </div>
+</body>
+</html>
